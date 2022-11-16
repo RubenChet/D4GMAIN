@@ -18,5 +18,10 @@ export default {
 </script>
 
 <style>
-
+body{
+  margin: 0!important;
+}
+.vs-navbar-content{
+  position: relative!important;
+}
 </style>

@@ -1,6 +1,12 @@
 
 <template>
-
+  <div class="MaiNavbar">
+    <div class="navbar_logos">
+      <p>logos</p>
+      <p>logos</p>
+      <p>logos</p>
+    </div>
+    <div class="border-bottom"></div>
     <div class="center examplex">
       <vs-navbar color="#2C6345" text-white center-collapsed square v-model="active">
         <template #left>
@@ -49,7 +55,7 @@
         </vs-navbar-item>
 
         <template #right>
-          <vs-button flat >Login</vs-button>
+          <vs-button flat>Login</vs-button>
           <vs-button>Get Started</vs-button>
         </template>
       </vs-navbar>
@@ -65,11 +71,18 @@
         </div>
       </div>
     </div>
-  </template>
+  </div>
+</template>
 <script>
-  export default {
-    data:() => ({
-      active: 'guide'
-    })
-  }
-  </script>
+export default {
+  data: () => ({
+    active: 'guide'
+  })
+}
+</script>
+<style>
+.navbar_logos {
+  display: flex;
+  justify-content: space-around;
+}
+</style>
